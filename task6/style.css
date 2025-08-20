@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+#result {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    min-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    min-height: 2.5rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+#result p {
+    margin: 0;
+    color: #6c757d;
+}
+
+#result p.final-amount {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+}

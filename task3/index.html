@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../index.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="controls">
+    <label for="case_string">Enter Text:</label>
+    <input
+            type="text"
+            id="case_string"
+            name="case_string"
+            placeholder="Enter your text"
+    />
+    <label for="case">Manipulate to? </label>
+    <select id="case" name="case">
+        <option value="">-- Choose from the options --</option>
+        <option value="reverseString">Reverse String</option>
+        <option value="countVowels">Count Vowels</option>
+        <option value="truncate">Truncate</option>
+    </select>
+</div>
+<div id="output"></div>
+</body>
+</html>

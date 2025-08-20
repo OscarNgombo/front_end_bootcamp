@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../index.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <label for="case_string"></label>
+    <input
+            type="text"
+            id="case_string"
+            name="case_string"
+            placeholder="Enter text..."
+    />
+    <label for="caseOptions">convert to? </label>
+    <select id="caseOptions" name="case">
+        <option value="">--Please choose a case from the options--</option>
+        <option value="camelCase">Camel Case</option>
+        <option value="snake_case">Snake Case</option>
+        <option value="kebab-case">Kebab Case</option>
+        <option value="PascalCase">Pascal Case</option>
+        <option value="UPPER_CASE_SNAKE_CASE">Uppercase Snake</option>
+    </select>
+    <button id="convertButton">Convert</button>
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

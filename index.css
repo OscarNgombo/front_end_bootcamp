@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "LexendDeca";
+    src: url("./assets/fonts/LexendDeca.ttf") format("truetype");
+}
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "LexendDeca", serif;
+    font-size: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 100vw;
+}
+a{
+    text-decoration: none;    
+}
+.container{
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.task-list {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.task-link {
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+}
+
+.task-link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
