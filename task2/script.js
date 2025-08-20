@@ -54,8 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const convertButton = document.getElementById("convertButton");
     const caseOptions = document.getElementById("caseOptions");
     const resultDiv = document.getElementById("result");
-    console.log(caseConverter("Osar, Ngombo tinga", "kebab-case"));
-
     convertButton.addEventListener("click", () => {
         const stringToConvert = document.getElementById("case_string").value;
         const selectedCase = caseOptions.value;
